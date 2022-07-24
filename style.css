@@ -20,28 +20,48 @@ body {
 img{
     max-width: 100%;
 }
-.btn, .secondBatchButtons{
+.main1{
+    margin: 5em;
+}
+
+.secondBatchButtons{
     cursor: pointer;
     display:inline-block;
+    width: 150px;
+    border-radius: 2em;
+}
+#signInBtn{
+    background-color: steelblue;
+    color: var(--clr-bg);
+    width: 100px;
+    border-radius: 1ex;
+    padding: 5px
+}
+#loginBtn{
+    cursor: pointer;
+    background: transparent;
+    width: 100px;
+    border-radius: 1ex;
+    padding: 5px;
 }
 .buttonsGroup{
     
     flex-grow: 1; /*width:100%; works just as well*/
     display: flex;
     justify-content: space-around;
-    grid-column: -1/-1;
+    grid-column: 1/6;
     line-height: 4;
     margin: 3em;
-    
 }
 .secondBatchButtons{
     
-    border: 1;
+    border: none;
     background: transparent;
     color: var(--clr-text);
     font-size: 0.9rem;
     padding: 0.5em;
     border-radius: 2em;
+    box-shadow: 1px 1px 1px #000;
     
 }
 .summary{
@@ -60,6 +80,7 @@ header{
     display: flex;
     align-items: center;
     margin: 2em 0;
+    grid-column: 1/6;
     
 }
 .nav{
@@ -77,29 +98,27 @@ header{
 .main-grid {
     display: grid;
     grid-template-columns:  
+    
         minmax(1em,1fr)
-        repeat(2,minmax(10rem,40rem))
+        repeat(3,minmax(10rem,40rem))
         minmax(1em,1fr)
 }
 header{
-    display: grid;
-    grid-column: 2/4;
+    display: flex;
+    grid-column: 1/6; 
 }
-
 main{
-    grid-column: 2/4;
+    grid-column: 2/6;
     display: grid;
+    grid-template-columns: subgrid;
 }
 
-.topImage{
-    display: grid;
-    grid-column: 2/4;
-}
 .imgDiv{
     display: grid;
-    grid-column: 3/4;
+    grid-column: 3/6;
+    width: auto;
+    
 }
-
 
 /* SECTION 2: MAIN */
 
