@@ -1,11 +1,104 @@
-* {
-    margin: 0;
-    padding: 0;
+/* SECTION 1: HEADER */
+*,
+*::before,
+*::after{
     box-sizing: border-box;
 }
 
+:root {
+    --clr-text: black;
+    --clr-bg: white;
+}
 
-/* SECTION 1: HEADER */
+body {
+    margin: 5em;
+    background-color: var(--clr-bg);
+    color: var(--clr-text);
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.btn, .secondBatchButtons{
+    cursor: pointer;
+    display:inline-block;
+}
+.buttonsGroup{
+    
+    flex-grow: 1; /*width:100%; works just as well*/
+    display: flex;
+    justify-content: space-around;
+    grid-column: -1/-1;
+    line-height: 4;
+    margin: 3em;
+    
+}
+.secondBatchButtons{
+    
+    border: 1;
+    background: transparent;
+    color: var(--clr-text);
+    font-size: 0.9rem;
+    padding: 0.5em;
+    border-radius: 2em;
+    
+}
+.summary{
+    color: var(--clr-text);
+    margin: 0;
+    /*font-size: clamp(2rem,5vw, 7rem);*/
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 1.5em;
+
+}
+.description{
+    line-height: 4;
+}
+header{
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+    
+}
+.nav{
+    /*outline: 2px solid red;*/
+    flex-grow: 1; /*width:100%; works just as well*/
+    display: flex;
+    justify-content: space-around;
+}
+.nav__link{
+    color: var(--clr-text);
+    text-decoration: none;
+    
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns:  
+        minmax(1em,1fr)
+        repeat(2,minmax(10rem,40rem))
+        minmax(1em,1fr)
+}
+header{
+    display: grid;
+    grid-column: 2/4;
+}
+
+main{
+    grid-column: 2/4;
+    display: grid;
+}
+
+.topImage{
+    display: grid;
+    grid-column: 2/4;
+}
+.imgDiv{
+    display: grid;
+    grid-column: 3/4;
+}
 
 
 /* SECTION 2: MAIN */
