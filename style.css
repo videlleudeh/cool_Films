@@ -10,5 +10,14 @@
 
 /* SECTION 2: MAIN */
 
+#main {
+    padding: 3rem 5rem;
+    font-size: 1.4rem;
+}
+
+#main p {
+    font-weight: 480;
+}
+
 
 /* SECTION 3: FOOTER */
