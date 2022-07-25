@@ -11,11 +11,12 @@
 /* SECTION 2: MAIN */
 
 #main {
-    padding: 3rem 5rem;
-    font-size: 1.4rem;
+    padding: 3rem 0;
+    
 }
 
 #main p {
+    font-size: 1.3rem;
     font-weight: 480;
 }
 
